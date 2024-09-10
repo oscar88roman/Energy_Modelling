@@ -1,6 +1,3 @@
-Sure! Here’s an enthusiastic and engaging version for your GitHub repository:
-
----
 
 # 🌍 Energy Modeling in Digital Twins: Shaping the Future of Buildings! ⚡️
 
