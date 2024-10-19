@@ -1,0 +1,44 @@
+{
+    "0": {
+        "building_type": "office_building",
+        "room_type": "office",
+        "details": {
+            "temperature_set_points": {
+                "summer": 25,
+                "winter": 21,
+                "intermediate_season": 19
+            },
+            "humidity": 51,
+            "co2_level_max": 920,
+            "max_air_velocity_hvac": 0.17
+        }
+    },
+    "1": {
+        "building_type": "office_building",
+        "room_type": "office",
+        "details": {
+            "temperature_set_points": {
+                "summer": 24,
+                "winter": 22,
+                "intermediate_season": 20
+            },
+            "humidity": 51,
+            "co2_level_max": 903,
+            "max_air_velocity_hvac": 0.17
+        }
+    },
+    "2": {
+        "building_type": "office_building",
+        "room_type": "office",
+        "details": {
+            "temperature_set_points": {
+                "summer": 27,
+                "winter": 19,
+                "intermediate_season": 22
+            },
+            "humidity": 50,
+            "co2_level_max": 926,
+            "max_air_velocity_hvac": 0.22
+        }
+    }
+}

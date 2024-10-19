@@ -1,0 +1,252 @@
+{
+  "title": "Room Type Information for Building Energy Management (Based on Italian Regulations)",
+  "introductory_text": "This document provides detailed environmental control settings for different room types in buildings, in compliance with standard Italian regulations such as Legislative Decree 81/2008 for workplace safety and comfort, and recommendations from UNI EN 16798-1:2019 regarding indoor environmental input parameters. The goal is to ensure comfort, energy efficiency, and air quality across various building types, including residential homes, schools, and office buildings. Below are the key assumptions made based on Italian regulations for indoor climate control:",
+  "assumptions": {
+    "Winter Indoor Temperature": "20°C - 22°C for residential buildings, offices, and schools.",
+    "Summer Indoor Temperature": "26°C - 27°C.",
+    "Intermediate Seasons Temperature": "Slightly adjusted temperatures depending on local conditions.",
+    "Humidity": "40% - 60% (ideal range).",
+    "CO2 Level": "Maximum indoor CO2 concentration should be ≤ 1000 ppm.",
+    "Air Velocity": "Should not exceed 0.2 m/s to ensure comfort, as per EN 15251/2007.",
+    "Occupancy": "Occupancy hours are based on typical usage patterns specific to each room type."
+  },
+  "building_types": {
+    "house_building": {
+      "rooms": [
+        {
+          "room_type": "Living Room",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 20,
+            "intermediate_season": 21
+          },
+          "humidity": 50,
+          "co2_level_max": 1000,
+          "max_air_velocity_hvac": 0.15,
+          "occupancy_hours_per_day": 8,
+          "irradiacy": true,
+          "heat_pump_source": "Air Source Heat Pump 1"
+        },
+        {
+          "room_type": "Bedroom",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 20,
+            "intermediate_season": 21
+          },
+          "humidity": 45,
+          "co2_level_max": 1000,
+          "max_air_velocity_hvac": 0.15,
+          "occupancy_hours_per_day": 8,
+          "irradiacy": true,
+          "heat_pump_source": "Air Source Heat Pump 2"
+        },
+        {
+          "room_type": "Kitchen",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 22,
+            "intermediate_season": 23
+          },
+          "humidity": 55,
+          "co2_level_max": 1000,
+          "max_air_velocity_hvac": 0.2,
+          "occupancy_hours_per_day": 4,
+          "irradiacy": true,
+          "heat_pump_source": "Air Source Heat Pump 1"
+        },
+        {
+          "room_type": "Bathroom",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 24,
+            "intermediate_season": 23
+          },
+          "humidity": 60,
+          "co2_level_max": 1000,
+          "max_air_velocity_hvac": 0.25,
+          "occupancy_hours_per_day": 2,
+          "irradiacy": false,
+          "heat_pump_source": "Air Source Heat Pump 2"
+        },
+        {
+          "room_type": "Garage",
+          "heated": false,
+          "cooling": false,
+          "temperature_set_points": {
+            "summer": 27,
+            "winter": 16,
+            "intermediate_season": 18
+          },
+          "humidity": 60,
+          "co2_level_max": 1500,
+          "max_air_velocity_hvac": 0.3,
+          "occupancy_hours_per_day": 1,
+          "irradiacy": false,
+          "heat_pump_source": "N/A"
+        }
+      ]
+    },
+    "school_building": {
+      "rooms": [
+        {
+          "room_type": "Classroom",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 20,
+            "intermediate_season": 21
+          },
+          "humidity": 50,
+          "co2_level_max": 1000,
+          "max_air_velocity_hvac": 0.2,
+          "occupancy_hours_per_day": 6,
+          "irradiacy": true,
+          "heat_pump_source": "Air Source Heat Pump 1"
+        },
+        {
+          "room_type": "Gymnasium",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 24,
+            "winter": 18,
+            "intermediate_season": 20
+          },
+          "humidity": 60,
+          "co2_level_max": 1200,
+          "max_air_velocity_hvac": 0.25,
+          "occupancy_hours_per_day": 8,
+          "irradiacy": false,
+          "heat_pump_source": "Air Source Heat Pump 2"
+        },
+        {
+          "room_type": "Cafeteria",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 22,
+            "intermediate_season": 23
+          },
+          "humidity": 55,
+          "co2_level_max": 1000,
+          "max_air_velocity_hvac": 0.25,
+          "occupancy_hours_per_day": 4,
+          "irradiacy": true,
+          "heat_pump_source": "Air Source Heat Pump 1"
+        },
+        {
+          "room_type": "Bathroom",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 24,
+            "intermediate_season": 23
+          },
+          "humidity": 60,
+          "co2_level_max": 1000,
+          "max_air_velocity_hvac": 0.25,
+          "occupancy_hours_per_day": 2,
+          "irradiacy": false,
+          "heat_pump_source": "Air Source Heat Pump 2"
+        }
+      ]
+    },
+    "office_building": {
+      "rooms": [
+        {
+          "room_type": "Office",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 21,
+            "intermediate_season": 22
+          },
+          "humidity": 50,
+          "co2_level_max": 900,
+          "max_air_velocity_hvac": 0.15,
+          "occupancy_hours_per_day": 8,
+          "irradiacy": true,
+          "heat_pump_source": "Air Source Heat Pump 1"
+        },
+        {
+          "room_type": "Conference Room",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 21,
+            "intermediate_season": 22
+          },
+          "humidity": 55,
+          "co2_level_max": 1000,
+          "max_air_velocity_hvac": 0.2,
+          "occupancy_hours_per_day": 4,
+          "irradiacy": true,
+          "heat_pump_source": "Air Source Heat Pump 2"
+        },
+        {
+          "room_type": "Lobby",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 22,
+            "intermediate_season": 23
+          },
+          "humidity": 50,
+          "co2_level_max": 1000,
+          "max_air_velocity_hvac": 0.2,
+          "occupancy_hours_per_day": 12,
+          "irradiacy": true,
+          "heat_pump_source": "Air Source Heat Pump 1"
+        },
+        {
+          "room_type": "Cafeteria",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 22,
+            "intermediate_season": 23
+          },
+          "humidity": 55,
+          "co2_level_max": 1000,
+          "max_air_velocity_hvac": 0.25,
+          "occupancy_hours_per_day": 4,
+          "irradiacy": true,
+          "heat_pump_source": "Air Source Heat Pump 1"
+        },
+        {
+          "room_type": "Bathroom",
+          "heated": true,
+          "cooling": true,
+          "temperature_set_points": {
+            "summer": 26,
+            "winter": 24,
+            "intermediate_season": 23
+          },
+          "humidity": 60,
+          "co2_level_max": 1000,
+          "max_air_velocity_hvac": 0.25,
+          "occupancy_hours_per_day": 2,
+          "irradiacy": false,
+          "heat_pump_source": "Air Source Heat Pump 2"
+        }
+      ]
+    }
+  }
+}
+

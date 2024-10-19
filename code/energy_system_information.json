@@ -1,0 +1,114 @@
+{
+  "title": "ENERGY SYSTEM OF THE BUILDING",
+
+  "building_energy_system": {
+    "heat_pump": {
+      "type": "Air Source Heat Pump 1",
+      "efficiency_cop": 3.8,
+      "capacity_kw": 10,
+      "model": "XYZ123",
+      "manufacturer": "HeatPumpCo",
+      "installation_year": 2021
+    },
+
+    "building_energy_system": {
+      "heat_pump": {
+        "type": "Air Source Heat Pump 2",
+        "efficiency_cop": 3.6,
+        "capacity_kw": 9.8,
+        "model": "XYZ123",
+        "manufacturer": "HeatPumpCo",
+        "installation_year": 2020
+      },
+
+      "heating_system": {
+        "types": [
+          {
+            "type": "Radiator type 1",
+            "material": "Steel",
+            "number_of_units": 6,
+            "dimensions": {
+              "height": 600,
+              "width": 1000,
+              "depth": 100
+            },
+            "average_power_watt": 1800,
+            "installation_year": 2019
+          },
+          {
+            "type": "Radiator type 2",
+            "material": "Cast Iron",
+            "number_of_units": 4,
+            "dimensions": {
+              "height": 750,
+              "width": 600,
+              "depth": 200
+            },
+            "average_power_watt": 2000,
+            "installation_year": 2018
+          }
+        ]
+      },
+
+      "lighting_system": {
+        "types": [
+          {
+            "type": "LED",
+            "location": "Indoor",
+            "wattage_per_unit": 10,
+            "total_units": 50,
+            "color_temperature_k": 4000,
+            "dimensions": {
+              "width": 1200,
+              "length": 300
+            }
+          },
+          {
+            "type": "Fluorescent",
+            "location": "Garage",
+            "wattage_per_unit": 18,
+            "total_units": 10,
+            "color_temperature_k": 3000,
+            "dimensions": {
+              "width": 1200,
+              "length": 300
+            }
+          }
+        ]
+      },
+
+      "hvac_system": {
+        "type": "Centralized HVAC",
+        "fuel_type": "Electricity",
+        "cooling_capacity_kw": 15,
+        "heating_capacity_kw": 20,
+        "energy_efficiency_rating": "A+",
+        "manufacturer": "HVACCo",
+        "installation_year": 2020
+      },
+
+      "solar_panels": {
+        "installed": true,
+        "number_of_panels": 25,
+        "type": "Monocrystalline",
+        "capacity_per_panel": 0.32,
+        "total_capacity": 8,
+        "inverter_efficiency": 0.95,
+        "installation_year": 2022
+      },
+
+      "renewable_energy_sources": {
+        "solar_energy": {
+          "contribution_per_year": 9600,
+          "percentage_of_total_energy": 25
+        },
+        "wind_energy": {
+          "contribution_per_year": 1200,
+          "percentage_of_total_energy": 3
+        }
+      }
+    }
+  }
+}
+
+
